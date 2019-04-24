@@ -1,6 +1,6 @@
 pandas
-bqplot
-numpy
-traitlets
-ipywidgets
 matplotlib
+numpy
+ipywidgets
+datetime
+bqplot
