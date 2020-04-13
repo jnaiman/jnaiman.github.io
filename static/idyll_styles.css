@@ -1097,20 +1097,3 @@ img {
     max-height: 200px;
   }
 }
-
-/* ADDED */
-/* Some formatting for the scroll and step boxes */
-/* .idyll-scroll {
-  margin-top: 0; 
-  width: 100vw;
-}
-*/
-
-/* Move the steps up and shorten them */
-/* .idyll-scroll-text .idyll-step {
-  max-width: 45vw;
-  position: relative;
-  top: -150vh;
-  padding: 4vw;
-}
-*/
