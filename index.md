@@ -23,3 +23,7 @@ So now, I will add in a figure.
 Adding in another photo:
 
 ![another photo alt text](https://github.com/jnaiman/jnaiman.github.io/blob/master/savedphotogithub.png)
+
+#### Last thing
+
+Adding in a link: [this is a link to the AOG section of IS445](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/)
