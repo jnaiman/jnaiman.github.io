@@ -27,3 +27,5 @@ Adding in another photo:
 #### Last thing
 
 Adding in a link: [this is a link to the AOG section of IS445](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/)
+
+I can also link to [google](https://www.google.com/)
