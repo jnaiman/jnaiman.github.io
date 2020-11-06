@@ -17,4 +17,5 @@ This is an ordered list:
  1. this is another item
 
 So now, I will add in a figure.
+
 ![this is alt-text for this figure](https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png)
