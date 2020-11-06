@@ -29,6 +29,7 @@ If in main directory
 ```![another photo alt text](https://github.com/jnaiman/jnaiman.github.io/blob/master/savedphotogithub.png?raw=true)```
 
 Now that things are in this `githubIoTut` subdirectory:
+
 ![another photo alt text](https://github.com/jnaiman/jnaiman.github.io/blob/master/githubIoTut/savedphotogithub.png?raw=true)
 
 #### Last thing
