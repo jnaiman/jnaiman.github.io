@@ -22,7 +22,10 @@ So now, I will add in a figure.
 
 Adding in another photo:
 
-![another photo alt text](https://github.com/jnaiman/jnaiman.github.io/blob/master/savedphotogithub.png)
+Wrong code:
+```![another photo alt text](https://github.com/jnaiman/jnaiman.github.io/blob/master/savedphotogithub.png)```
+
+![another photo alt text](https://github.com/jnaiman/jnaiman.github.io/blob/master/savedphotogithub.png?raw=true)
 
 #### Last thing
 
