@@ -22,3 +22,7 @@ I am going to add a figure here from the web:
 ![corgi in hat](https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png)
 
 I can also add in hyperlinks to places like [google](https://www.google.com).
+
+Add in a link to photo I uploaded:
+
+![photo I uploaded](https://github.com/jnaiman/jnaiman.github.io/blob/master/testUploadPhoto.png?raw=true)
