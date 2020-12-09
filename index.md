@@ -16,3 +16,7 @@ I can also make an ordered list:
 *this is italisized*
 
 **I can bold things too** 
+
+I am going to add a figure here from the web:
+
+![corgi in a hat](https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png)
