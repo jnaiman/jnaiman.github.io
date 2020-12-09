@@ -20,3 +20,5 @@ I can also make an ordered list:
 I am going to add a figure here from the web:
 
 ![corgi in hat](https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png)
+
+I can also add in hyperlinks to places like [google](https://www.google.com).
