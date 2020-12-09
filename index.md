@@ -4,7 +4,7 @@ Hello, I am a webpage!
 ## This is a subheader
 
 I can make an un-ordered list:
- * first bullet point
+ *first bullet point
  * 2nd bullet point
  * 3rd bullet point
  
