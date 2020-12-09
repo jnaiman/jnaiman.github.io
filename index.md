@@ -26,3 +26,5 @@ I can also add in hyperlinks to places like [google](https://www.google.com).
 Add in a link to photo I uploaded:
 
 ![photo I uploaded](https://github.com/jnaiman/jnaiman.github.io/blob/master/testUploadPhoto.png?raw=true)
+
+![another option](https://github.com/jnaiman/jnaiman.github.io/blob/master/testUploadPhoto.png?raw=true)
