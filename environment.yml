@@ -3,7 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - numpy
-  - ssl
   - matplotlib
   - openpyxl
   - bqplot=0.12.30
