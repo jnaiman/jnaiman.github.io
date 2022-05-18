@@ -3,15 +3,10 @@ channels:
   - conda-forge
 dependencies:
   - numpy
-  - psutil
-  - toolz
+  - ssl
   - matplotlib
-  - dill
-  - pandas
-  - partd
-  - bokeh
-  - dask
-  - plotly
+  - openpyxl
   - bqplot=0.12.30
   - seaborn
-  - panel
+  - ipywidgets
+  - pandas
