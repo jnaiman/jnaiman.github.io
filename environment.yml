@@ -1,10 +1,12 @@
-name: example-environment
-channels:
-  - conda-forge
+name: dash-app-env
+
 dependencies:
-  - numpy
-  - matplotlib=3.2.2
+  - JupyterDash
+  - dash
+  - html
+  - Output
+  - Input
   - pandas
-  - ipywidgets
-  - traitlets
-  - bqplot=0.12.30
+  - numpy
+  - json
+  - math
