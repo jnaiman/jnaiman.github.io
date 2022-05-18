@@ -3,9 +3,6 @@ name: dash-app-env
 dependencies:
   - jupyter-dash
   - dash
-  - html
   - pandas
   - numpy
-  - json
-  - math
   - plotly
