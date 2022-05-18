@@ -1,8 +1,17 @@
-name: dash-app-env
-
+name: example-environment
+channels:
+  - conda-forge
 dependencies:
-  - jupyter-dash
-  - dash
-  - pandas
   - numpy
+  - psutil
+  - toolz
+  - matplotlib
+  - dill
+  - pandas
+  - partd
+  - bokeh
+  - dask
   - plotly
+  - bqplot=0.12.30
+  - seaborn
+  - panel
