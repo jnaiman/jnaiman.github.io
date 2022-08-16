@@ -108,6 +108,8 @@ defaults:
 ### Exclude from processing ###
 exclude:
   - README.md
+  - README.md~
   - CONTRIBUTING.md
-  - LICENSE
+  - LICENSE.md
+  - LICENSE.md~
   - "*.log"
