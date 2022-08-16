@@ -9,7 +9,11 @@ open_new_tab        : false                             # Opens external URLs in
 
 
 ### Plugins ###
-#plugins:
+plugins:
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - mini_magick
 #  - jemoji
 
 ### JPN 
