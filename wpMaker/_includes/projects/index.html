@@ -4,9 +4,9 @@
   <!-- Remote Projects -->
   {% for remote_project in page.remote_projects %}
 
-    {%- for repo in site.github.public_repositories -%}
+   {%- for repo in site.github.public_repositories -%}
 
-      {%- if remote_project == repo.name -%}
+    {%- if remote_project == repo.name -%}
 
         {%- assign project = repo -%}
         {%- assign words = project.name | split: '-' -%}
@@ -33,6 +33,9 @@
     {%- endfor -%}
 
   {% endfor %}
+
+
+
 
   <!-- Local Projects -->
   {% for project in site.projects %}

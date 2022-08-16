@@ -1,9 +1,9 @@
 ### Site Settings ###
-title               : portfolYOU
+title               : wpMaker # JPN
 description         : >-
                       I may or may not be a corgi.
-baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+baseurl             : "/wpMaker"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly # JPN
+repository          : jnaiman     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 #remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
@@ -12,7 +12,7 @@ open_new_tab        : false                             # Opens external URLs in
 #plugins:
 #  - jemoji
 
-### JPN ADDITIONS -- live reload doesn't work?
+### JPN 
 port: 4007
 
 ### Navbar Settings ###
@@ -31,7 +31,7 @@ author:
 # dribbble          : your_username
   email             : username@domain.com
   facebook          : your_username
-  github            : your_username
+  github            : jnaiman # JPN
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
