@@ -1,24 +1,21 @@
 ### Site Settings ###
-title               : wpMaker # JPN
+title               : portfolYOU
 description         : >-
-                      I may or may not be a corgi.
-baseurl             : "/wpMaker"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly # JPN
-#baseurl             : "/jnaiman.github.io/wpMaker"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly # JPN
-repository          : jnaiman     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-#remote_theme        : YoussefRaafatNasry/portfolYOU
+                      I turn coffee :coffee: into code,
+                      use tabs over spaces
+                      and never broke production.
+baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
 ### Plugins ###
-plugins:
-  - jekyll-archives
-  - jekyll-sitemap
-  - jekyll-paginate-v2
-  - mini_magick
+#plugins:
 #  - jemoji
 
-### JPN 
-port: 4008
+### JPN ADDITIONS -- live reload doesn't work?
+port: 4007
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
@@ -31,12 +28,12 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : John Doe
-  image             : https://dogtime.com/assets/uploads/gallery/pembroke-welsh-corgi-dog-breed-pictures/prance-8.jpg
+  image             : https://i.imgur.com/uyDNQnn.jpg
   behance           : your_username
 # dribbble          : your_username
   email             : username@domain.com
   facebook          : your_username
-  github            : jnaiman # JPN
+  github            : your_username
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
@@ -46,10 +43,10 @@ author:
 # spotify           : your_username
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
-  twitch            : your_username
+# twitch            : your_username
   twitter           : your_username
-  vimeo             : your_username
-  youtube           : your_channel_name
+# vimeo             : your_username
+# youtube           : your_channel_name
 # keybase           : your_username
 
 
@@ -110,10 +107,6 @@ defaults:
 ### Exclude from processing ###
 exclude:
   - README.md
-  - README.md~
   - CONTRIBUTING.md
-  - LICENSE.md
-  - LICENSE.md~
-  - config.yml~
+  - LICENSE
   - "*.log"
-  - tmp_old/*
