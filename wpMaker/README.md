@@ -10,3 +10,8 @@ trying to install with: bundle install --path ~/.gem
 
 
 bundle exec jekyll serve --> without the l for live reload if something else is running?
+
+
+## Sources
+
+This is an amalgamation of [portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU) and [4dcu.be](https://github.com/4dcu-be/4dcu.be).
