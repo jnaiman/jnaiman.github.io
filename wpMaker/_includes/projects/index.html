@@ -42,7 +42,15 @@
 
     {%- assign project_type  = "local" -%}
     {%- assign project_id    = project.name | slugify -%}
-    {%- assign project_img   = project.image -%}
+
+    {%- if project.external_img -%}
+      {%- assign project_img = project.external_image -%}
+    {%- else -%}
+      {%- assign u = project.image | split: "projects/" -%}
+      {%- assign project_img = {{u[0]}} | relative_url -%}
+  {%- endif -%}
+  
+
     {%- assign project_name  = project.name -%}
     {%- assign project_desc  = project.description -%}
     {%- assign project_tools = project.tools -%}

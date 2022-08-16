@@ -1,14 +1,15 @@
 ---
 name: Vega Lite Example Project
-tools: [C#, XML, WPF]
-image: https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png
-description: This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!
+tools: [Python, HTML, vega-lite]
+image: assets/pngs/cars.png
+description: This is a "showcase" project that uses vega-lite for interactive viz!
 custom_js:
   - vega.min
   - vega-lite.min
   - vega-embed.min
   - justcharts
 ---
+
 
 # Example including vega-lite
 
