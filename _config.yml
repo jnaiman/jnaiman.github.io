@@ -2,7 +2,7 @@
 title               : example_homework10 # JPN
 description         : >-
                       I may or may not be a corgi.
-baseurl             : "/example_homework10"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly # JPN
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly # JPN
 repository          : jnaiman     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
@@ -112,4 +112,6 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE.md
   - LICENSE.md~
+  - config.yml~
+  - tmp_old/*
   - "*.log"
