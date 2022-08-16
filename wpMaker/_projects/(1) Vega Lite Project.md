@@ -15,9 +15,9 @@ custom_js:
 Example comes from this [example right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that we went over in class.
 
 
-<!-- <vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart> -->
+<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
 
-<vegachart schema-url="/Users/jnaiman/jnaiman.github.io/wpMaker/assets/json/cars.json" style="width: 100%"></vegachart>
+<!-- <vegachart schema-url="/Users/jnaiman/jnaiman.github.io/wpMaker/assets/json/cars.json" style="width: 100%"></vegachart> -->
 
 
 <!-- ## Search Movies
