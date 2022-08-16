@@ -110,6 +110,10 @@ defaults:
 ### Exclude from processing ###
 exclude:
   - README.md
+  - README.md~
   - CONTRIBUTING.md
-  - LICENSE
+  - LICENSE.md
+  - LICENSE.md~
+  - config.yml~
   - "*.log"
+  - tmp_old/*
