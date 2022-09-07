@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4008/wpMaker/sitemap.xml
+Sitemap: http://localhost:4008/test1/sitemap.xml

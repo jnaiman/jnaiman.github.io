@@ -28,10 +28,10 @@
   <title>Vega Lite Example Project</title>
   <meta name="description" content="This is a "showcase" project that uses vega-lite for interactive viz!">
 
-  <link rel="shortcut icon" type="image/x-icon" href="/wpMaker/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/test1/assets/favicon.ico">
 
   <!-- Theme style -->
-  <script src="/wpMaker/assets/js/theme.js"></script>
+  <script src="/test1/assets/js/theme.js"></script>
 
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/wpMaker/assets/css/style.css">
+  <link rel="stylesheet" href="/test1/assets/css/style.css">
 
 </head>
 
@@ -52,20 +52,18 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed">
 
-  <a class="navbar-brand" href="/wpMaker/"><h5><b>wpMaker</b></h5></a>
+  <a class="navbar-brand" href="/test1/"><h5><b>Jill Naiman</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/wpMaker/python_notebooks/"></a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/test1/projects/">Projects</a>
 
-      <a class="nav-item nav-link active" href="/wpMaker/projects/">Projects</a>
+      <a class="nav-item nav-link " href="/test1/blog/">Blog</a>
 
-      <a class="nav-item nav-link " href="/wpMaker/blog/">Blog</a>
-
-      <a class="nav-item nav-link " href="/wpMaker/about/">About</a>
+      <a class="nav-item nav-link " href="/test1/about/">About</a>
 
       
 
@@ -77,27 +75,16 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="example-including-vega-lite">Example including vega-lite</h1>
 
-<p>Example comes from this <a href="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html">example right here</a> that was produced in <a href="https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb">our test import script</a>.</p>
+<p>Example comes from this <a href="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html">great blog post right here</a> that was also used in <a href="https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb">our test import script</a>.</p>
 
 <p>We can use a vegachart HTML tag like so:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/wpMaker/assets/json/cars.json" style="width: 100%"&gt;&lt;/vegachart&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/test1/assets/json/cars.json" style="width: 100%"&gt;&lt;/vegachart&gt;
 </code></pre></div></div>
 
-<vegachart schema-url="/wpMaker/assets/json/cars.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/test1/assets/json/cars.json" style="width: 100%"></vegachart>
 
-<!--
-We can also use some Jeykll hooks (in "_plugins"): ... but this doesn't work
-
-```
- [![Number of cylinders vs different stats](/assets/pngs/cars.png)](/assets/json/cars.json)
-```
-
- [![Number of cylinders vs different stats](/wpMaker/assets/pngs/cars.png)](/wpMaker/assets/json/cars.json)
-
-Though, note that this does some weird auto-formatting with 
-
--->
+<p>In theory, you can also use <a href="https://jekyllrb.com/docs/plugins/hooks/">Jekyll hooks</a> to do it, but I haven’t figured out a way that looks nice yet.</p>
 
 <h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
 
@@ -116,6 +103,8 @@ Though, note that this does some weird auto-formatting with
 &lt;/div&gt;
 </code></pre></div></div>
 
+<!-- these are written in a combo of html and liquid -->
+
 <div class="left">
 <a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/vega/vega/blob/main/docs/data/cars.json">
   The Data
@@ -123,7 +112,7 @@ Though, note that this does some weird auto-formatting with
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
   The Analysis
 </a>
 </div>
@@ -135,7 +124,7 @@ Though, note that this does some weird auto-formatting with
 
   <small class="text-muted mb-2">
     <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>John Doe</strong>
+    by <strong>Jill P. Naiman</strong>
   </small>
 
   <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
@@ -199,13 +188,13 @@ Though, note that this does some weird auto-formatting with
 
 <!-- Custom page specific js files -->
   
-    <script src='/wpMaker/assets/js/vega.min.js' type="text/javascript"></script>
+    <script src='/test1/assets/js/vega.min.js' type="text/javascript"></script>
   
-    <script src='/wpMaker/assets/js/vega-lite.min.js' type="text/javascript"></script>
+    <script src='/test1/assets/js/vega-lite.min.js' type="text/javascript"></script>
   
-    <script src='/wpMaker/assets/js/vega-embed.min.js' type="text/javascript"></script>
+    <script src='/test1/assets/js/vega-embed.min.js' type="text/javascript"></script>
   
-    <script src='/wpMaker/assets/js/justcharts.js' type="text/javascript"></script>
+    <script src='/test1/assets/js/justcharts.js' type="text/javascript"></script>
   
 
 
