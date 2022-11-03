@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Take2 - Vega-lite plots in Jekyll, Multiple Ways">
-  <meta property="og:description" content="Ways to get vega-lite plots in our webpages, day 2.">
-  <meta property="og:image" content="assets/pngs/vegaMultipleWays.png">
+  <meta property="og:title" content="Take 2 - vega-lite, many ways">
+  <meta property="og:description" content="Multiple ways to use vega-lite in our Jekyll page.">
+  <meta property="og:image" content="assets/pngs/cars.png">
 
-  <title>Take2 - Vega-lite plots in Jekyll, Multiple Ways</title>
-  <meta name="description" content="Ways to get vega-lite plots in our webpages, day 2.">
+  <title>Take 2 - vega-lite, many ways</title>
+  <meta name="description" content="Multiple ways to use vega-lite in our Jekyll page.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -73,49 +73,55 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="example-vega-lite-specs-multiple-ways-to-include">Example Vega-lite Specs, Multiple Ways to Include</h1>
+  <h1 id="general-ways-to-include-vega-lite-plots">General ways to include vega-lite plots</h1>
 
-<h2 id="directly-from-the-vega-editor">Directly From the Vega Editor</h2>
+<p>Order of operations:</p>
 
-<p>The following plots below are coming directly from modifying the <a href="https://vega.github.io/editor">vega-lite editor</a>.</p>
+<ol>
+  <li>generate a JSON specification (from somewhere – vega-editor, 
+Altair, etc)</li>
+  <li>save the JSON specification into <code class="language-plaintext highlighter-rouge">assets/json</code></li>
+  <li>include the “vega-lite tag” with the following example code:</li>
+</ol>
 
-<vegachart schema-url="/assets/json/fromvegaeditor.json" style="width: 100%"></vegachart>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/fromvegaeditor.json" style="width: 100%"&gt;&lt;/vegachart&gt;
+</code></pre></div></div>
 
-<vegachart schema-url="/assets/json/interactivefromvegaeditor.json" style="width: 100%"></vegachart>
+<h2 id="1-including-vega-lite-plots-directly-from-the-editor">1. Including vega-lite plots directly from the editor</h2>
 
-<vegachart schema-url="/assets/json/interactive2vegaeditor.json" style="width: 100%"></vegachart>
+<p>If we are copying from the <a href="https://vega.github.io/editor">vega-editor</a> we want to make sure we have the full data link.  We can find that by Googling for “vega datasets github” which takes us <a href="https://github.com/vega/vega-datasets/tree/next/data">right here</a> and we can search for our dataset.</p>
 
-<p>How this works is that in the vega-editor I can generate a specification as shown in the screenshot below:</p>
+<p>Make sure it is the “raw” form of the data!</p>
 
-<p><img src="/assets/pngs/examplevegaeditor.png" alt="Screenshot of vega-editor" /></p>
+<vegachart schema-url="/assets/json/interactivescatter_fulllink.json" style="width: 100%"></vegachart>
 
-<p>As a reference, here is how I can include an image hosted elsewhere (right-click on image and do Copy Image Link):</p>
+<h2 id="2-how-to-use-vega-lite-specifications-from-other-sources-ie-starboard">2. How to use vega-lite specifications from other sources (i.e. Starboard)</h2>
 
-<p><img src="https://vega.github.io/images/vg.png" alt="Copy of image hosted on vega-lite" /></p>
+<p>Starting with a static histogram plot with the Mobility dataset from a <a href="https://starboard.gg/nb/nrSZM7g">Starboard Notebook from Week 10</a>.</p>
 
-<h2 id="copy-specifications-directly-from-online-sources-ie-starboard-through-altair">Copy specifications directly from online sources (i.e. Starboard) through Altair</h2>
+<vegachart schema-url="/assets/json/mobility_hist.json" style="width: 100%"></vegachart>
 
-<p>Here is an example of a plot copied from <a href="https://starboard.gg/nb/nDgjr30">a Starboard notebook</a>.  It uses the Altair <code class="language-plaintext highlighter-rouge">from_dict</code> function.</p>
+<h2 id="3-limitations-of-just-copying-from-starboard--how-to-fix-some-of-this-with-altair">3. Limitations of just copying from Starboard – how to fix some of this with Altair</h2>
 
-<vegachart schema-url="/assets/json/chart1.json" style="width: 100%"></vegachart>
-
-<p>I can start building up a dashboard in Altair using several <code class="language-plaintext highlighter-rouge">from_dict</code> calls and <code class="language-plaintext highlighter-rouge">hconcat</code> in Altair:</p>
+<p>Side by side, from Starboard (no interactivity):</p>
 
 <vegachart schema-url="/assets/json/sidebyside.json" style="width: 100%"></vegachart>
 
-<p>I now have added a brush selector to the <code class="language-plaintext highlighter-rouge">rect</code> mark on the left using Altair and also a <code class="language-plaintext highlighter-rouge">transform_filter</code> to the right also in Altair:</p>
+<p>Including a <code class="language-plaintext highlighter-rouge">brush</code> selection and a <code class="language-plaintext highlighter-rouge">transform_filter</code> in our dashboard for interactivity:</p>
 
-<vegachart schema-url="/assets/json/dashboard_mobility.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/dashboard_mobility_from_dict.json" style="width: 100%"></vegachart>
 
-<h2 id="using-altair-in-python-to-make-the-full-chart">Using Altair in Python to make the full chart</h2>
+<h2 id="4-making-the-plot-fully-in-altair-with-data-stored-online">4. Making the plot fully in Altair with data stored online)</h2>
 
-<p>Quick scatter plot of the Mobility dataset:</p>
+<p>Making a quick scatter plot:</p>
 
-<vegachart schema-url="/assets/json/mobility_scatter.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/scatters_mobility.json" style="width: 100%"></vegachart>
 
-<p>And the full dasbhoard using the Mobility dataset URL:</p>
+<p>Remake dashboard, all in Altair:</p>
 
-<vegachart schema-url="/assets/json/dashboard_alt_with_url.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/dashboard_all_in_altair.json" style="width: 100%"></vegachart>
+
+<h2 id="5-making-plot-fully-in-altair-with-local-data">(5. Making plot fully in Altair with local data)</h2>
 
 <!-- these are written in a combo of html and liquid -->
 
@@ -126,7 +132,7 @@
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week11/inClass_week11.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/UIUC-iSchool-DataViz/is445_oauoag_fall2022/blob/main/week11/inClass_week11.ipynb">
   The Analysis
 </a>
 </div>
