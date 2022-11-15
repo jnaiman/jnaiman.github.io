@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Take 2 - vega-lite, many ways">
-  <meta property="og:description" content="Multiple ways to use vega-lite in our Jekyll page.">
+  <meta property="og:title" content="Buildings &amp; Corgis all in Altair">
+  <meta property="og:description" content="More Altair-only, local-data plots.">
   <meta property="og:image" content="assets/pngs/vegaliteTake2.png">
 
-  <title>Take 2 - vega-lite, many ways</title>
-  <meta name="description" content="Multiple ways to use vega-lite in our Jekyll page.">
+  <title>Buildings &amp; Corgis all in Altair</title>
+  <meta name="description" content="More Altair-only, local-data plots.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -87,56 +87,26 @@ Altair, etc)</li>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/fromvegaeditor.json" style="width: 100%"&gt;&lt;/vegachart&gt;
 </code></pre></div></div>
 
-<h2 id="1-including-vega-lite-plots-directly-from-the-editor">1. Including vega-lite plots directly from the editor</h2>
+<h2 id="first-some-plots-with-the-buildings-dataset">First, some plots with the buildings dataset</h2>
 
-<p>If we are copying from the <a href="https://vega.github.io/editor">vega-editor</a> we want to make sure we have the full data link.  We can find that by Googling for “vega datasets github” which takes us <a href="https://github.com/vega/vega-datasets/tree/next/data">right here</a> and we can search for our dataset.</p>
+<p>Using layers for multiple lines:</p>
 
-<p>Make sure it is the “raw” form of the data!</p>
+<vegachart schema-url="/assets/json/buildings_sqft.json" style="width: 100%"></vegachart>
 
-<vegachart schema-url="/assets/json/interactivescatter_fulllink.json" style="width: 100%"></vegachart>
+<p>And with some lines selection:</p>
 
-<h2 id="2-how-to-use-vega-lite-specifications-from-other-sources-ie-starboard">2. How to use vega-lite specifications from other sources (i.e. Starboard)</h2>
-
-<p>Starting with a static histogram plot with the Mobility dataset from a <a href="https://starboard.gg/nb/nrSZM7g">Starboard Notebook from Week 10</a>.</p>
-
-<vegachart schema-url="/assets/json/mobility_hist.json" style="width: 100%"></vegachart>
-
-<h2 id="3-limitations-of-just-copying-from-starboard--how-to-fix-some-of-this-with-altair">3. Limitations of just copying from Starboard – how to fix some of this with Altair</h2>
-
-<p>Side by side, from Starboard (no interactivity):</p>
-
-<vegachart schema-url="/assets/json/sidebyside.json" style="width: 100%"></vegachart>
-
-<p>Including a <code class="language-plaintext highlighter-rouge">brush</code> selection and a <code class="language-plaintext highlighter-rouge">transform_filter</code> in our dashboard for interactivity:</p>
-
-<vegachart schema-url="/assets/json/dashboard_mobility_from_dict.json" style="width: 100%"></vegachart>
-
-<h2 id="4-making-the-plot-fully-in-altair-with-data-stored-online">4. Making the plot fully in Altair with data stored online</h2>
-
-<p>Making a quick scatter plot:</p>
-
-<vegachart schema-url="/assets/json/scatters_mobility.json" style="width: 100%"></vegachart>
-
-<p>Remake dashboard, all in Altair:</p>
-
-<vegachart schema-url="/assets/json/dashboard_all_in_altair.json" style="width: 100%"></vegachart>
-
-<h2 id="5-making-plot-fully-in-altair-with-local-data">5. Making plot fully in Altair with local data</h2>
-
-<p>We did a couple of things, namely, we used a local version of the mobility dataset, and then we <em>subsetted</em> that data set so that it was the smallest version of the data to pass with our specification.</p>
-
-<vegachart schema-url="/assets/json/dashboard_all_in_altair_subset.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/lines_selection.json" style="width: 100%"></vegachart>
 
 <!-- these are written in a combo of html and liquid -->
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/mobility.csv">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/corgs_per_country_over_time_columns_2020.csv">
   The Data
 </a>
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/UIUC-iSchool-DataViz/is445_oauoag_fall2022/blob/main/week11/inClass_week11.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week13/inClass_week13.ipynb">
   The Analysis
 </a>
 </div>
