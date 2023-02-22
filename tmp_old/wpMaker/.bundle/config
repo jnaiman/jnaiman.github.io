@@ -1,3 +1,0 @@
----
-BUNDLE_PATH: "/Users/jnaiman/.gem"
-BUNDLE_BUILD__NIO4R: "--with-cflags=-std=c99"
