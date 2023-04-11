@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Vega lite plots, multiple ways">
-  <meta property="og:description" content="Vega-lite plots using different methods.">
-  <meta property="og:image" content="assets/pngs/vegalitemanyways.png">
+  <meta property="og:title" content="More with Altair">
+  <meta property="og:description" content="Even more plots with Altair.">
+  <meta property="og:image" content="assets/pngs/manyplotsaltair.png">
 
-  <title>Vega lite plots, multiple ways</title>
-  <meta name="description" content="Vega-lite plots using different methods.">
+  <title>More with Altair</title>
+  <meta name="description" content="Even more plots with Altair.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -73,66 +73,22 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="use-vega-lite-in-many-ways-in-jekyll">Use Vega-lite in Many Ways in Jekyll</h1>
+  <h1 id="more-altair-plots">More Altair Plots</h1>
 
-<p>This project will show how to use vega-lite to make plots using different methods, and the vegachart tag from our plugins:</p>
+<p>First a “simple” line plot with Altair:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/cars.json" style="width: 100%"&gt;&lt;/vegachart&gt;
-</code></pre></div></div>
-
-<h2 id="1-directly-from-vega-editor">1. Directly from vega-editor</h2>
-
-<vegachart schema-url="/assets/json/vega_editor_plot1.json" style="width: 100%"></vegachart>
-
-<vegachart schema-url="/assets/json/vega_editor_plot2.json" style="width: 100%"></vegachart>
-
-<h2 id="2-quick-detour-with-images">2. Quick detour with images</h2>
-
-<p>We can include our own images that we have stored in 
-our <code class="language-plaintext highlighter-rouge">assets/pngs</code> folder with Markdown:</p>
-
-<p><img src="/assets/pngs/vegalitemanyways.png" alt="a vegalite plot with interactive legend" /></p>
-
-<p><img src="https://vega.github.io/images/vega-lite.png" alt="example image of vega-lite copied from google search" /></p>
-
-<h2 id="3-for-real-this-time-vega-lite-from-vega-specs-to-json-with-altair-in-python">3. For real this time, vega-lite from vega-specs to JSON with Altair in Python</h2>
-
-<vegachart schema-url="/assets/json/chart1.json" style="width: 100%"></vegachart>
-
-<p>Now here is an example of a side-by-side plot (not interactive though):</p>
-
-<vegachart schema-url="/assets/json/static_mobility_dashboard.json" style="width: 100%"></vegachart>
-
-<p>I have added some interactivity with a <code class="language-plaintext highlighter-rouge">altair.selection_interval</code> and <code class="language-plaintext highlighter-rouge">transform_filter</code>:</p>
-
-<vegachart schema-url="/assets/json/dashboard_of_mobility.json" style="width: 100%"></vegachart>
-
-<h2 id="4-start-making-plots-directly-from-altair">4. Start making plots directly from Altair</h2>
-
-<vegachart schema-url="/assets/json/population_scatter.json" style="width: 100%"></vegachart>
-
-<vegachart schema-url="/assets/json/altair_mobility_dashboard.json" style="width: 100%"></vegachart>
-
-<h2 id="4-plots-in-altair-with-locally-hosted-data">4. Plots in Altair with locally hosted data</h2>
-
-<p>With locally hosted dataframe in jupyter notebook:</p>
-
-<vegachart schema-url="/assets/json/altair_mobility_local_dashboard.json" style="width: 100%"></vegachart>
-
-<p>With a subset of that local dataframe:</p>
-
-<vegachart schema-url="/assets/json/altair_mobility_local_dashboard_subset.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/buildings_stats1.json" style="width: 100%"></vegachart>
 
 <!-- these are written in a combo of html and liquid -->
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/vega/vega/blob/main/docs/data/cars.json">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/building_inventory.csv">
   The Data
 </a>
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/UIUC-iSchool-DataViz/is445_oauoag_spring2023/blob/main/week13/inClass_week13.ipynb">
   The Analysis
 </a>
 </div>
