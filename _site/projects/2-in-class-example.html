@@ -23,12 +23,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="I am definitely not a corgi!">
-  <meta property="og:image" content="https://i.redd.it/on-a-scale-of-1-10-how-derpy-is-she-v0-z8gtdwu5n5zb1.jpg?width=3024&format=pjpg&auto=webp&s=345e7e1d5b45f20c733e497a9f746f4cbd3a61da">
+  <meta property="og:title" content="In Class Example">
+  <meta property="og:description" content="In class example.">
+  <meta property="og:image" content="assets/pngs/from_vega_editor.png">
 
-  <title>Projects</title>
-  <meta name="description" content="I am definitely not a corgi!">
+  <title>In Class Example</title>
+  <meta name="description" content="In class example.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -74,59 +74,45 @@
   </div>
 
 </nav>
-    <div class="card-columns m-3 mt-5">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="in-class-walkthrough">In Class Walkthrough</h1>
 
-  <!-- Local Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/1-vega-lite-project" class="project card text-themed"><img id="vega-lite-example-project-img" class="card-img-top" src="/assets/pngs/cars.png" alt="Vega Lite Example Project" /><div class="card-body">
-      <h5 id="vega-lite-example-project-name" class="card-title">Vega Lite Example Project
-      </h5>
-      <p id="vega-lite-example-project-desc" class="card-text">This is a "showcase" project that uses vega-lite for interactive viz!</p>
-      <p id="vega-lite-example-project-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
+<p>Getting some practice saving Altair/vega-lite json schemas for our Jekyll page.</p>
+
+<h2 id="case-1-saving-from-vega-lite-editor">Case 1: Saving from vega-lite editor</h2>
+
+<p>This I created by going to the <a href="https://vega.github.io/editor">vega-editor</a> and making sure I used the <a href="https://github.com/vega/vega-datasets/tree/master/data">vega-datasets</a> direct link to the data and saving with the “Export” from the vega-editor.</p>
+
+<vegachart schema-url="/assets/json/from_vega_editor.json" style="width: 100%"></vegachart>
+
+<h2 id="case-2-saving-from-altair">Case 2: Saving from Altair</h2>
+
+<p>Now we’ll learn how to save our specifications for inclusion here from a Python notebook.</p>
+
+<h3 id="sub-case-2a-with-remotely-hosted-data">Sub-case 2a: With remotely hosted data</h3>
+
+<vegachart schema-url="/assets/json/saved_plot1_sp25.json" style="width: 100%"></vegachart>
+
+<h3 id="sub-case-2b-with-data-saved-from-python">Sub-case 2b: With data saved from Python</h3>
+
+<vegachart schema-url="/assets/json/saved_plot3_sp25.json" style="width: 100%"></vegachart>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/mobility.csv">
+  The Data
+</a>
 </div>
 
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/2-in-class-example" class="project card text-themed"><img id="in-class-example-img" class="card-img-top" src="/assets/pngs/from_vega_editor.png" alt="In Class Example" /><div class="card-body">
-      <h5 id="in-class-example-name" class="card-title">In Class Example
-      </h5>
-      <p id="in-class-example-desc" class="card-text">In class example.</p>
-      <p id="in-class-example-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span><span class="badge badge-pill text-primary border border-primary ml-1">Altair</span></p>
-    </div>
-  </a>
-</div>
-
-  
-
-
-
-
-  <!-- Remote Projects -->
-  
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://github.com/jnaiman/is507_spring2021" class="project card text-themed"><div class="card-body">
-      <h5 id="is507_spring2021-name" class="card-title"><i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;Is507_spring2021
-      </h5>
-      <p id="is507_spring2021-desc" class="card-text">Repo for the Spring 2021 iteration of IS507: Data, Stats & Info at the iSchool, UIUC</p>
-      <p id="is507_spring2021-tools" class="card-text"></p>
-    </div>
-  </a>
-</div>
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://github.com/jnaiman/online_cv_public" class="project card text-themed"><div class="card-body">
-      <h5 id="online_cv_public-name" class="card-title"><i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;Online_cv_public
-      </h5>
-      <p id="online_cv_public-desc" class="card-text">Template Online CV for IS445 (see: https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2022/)</p>
-      <p id="online_cv_public-tools" class="card-text"></p>
-    </div>
-  </a>
-</div>
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
+  The Analysis
+</a>
 </div>
 
 
+</div>
   </main>
   <footer class="mt-auto py-3 text-center">
 
@@ -169,6 +155,17 @@
 
 </footer>
 
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
 
 
 
