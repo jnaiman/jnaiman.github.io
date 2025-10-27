@@ -1,7 +1,7 @@
 - name: HTML5/CSS3
-  percentage: 90
+  percentage: 50
   level: Expert
-  color: danger
+  color: secondary
 
 - name: Go
   percentage: 5
