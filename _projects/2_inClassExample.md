@@ -1,7 +1,7 @@
 ---
 name: In Class Notebook
 tools: [Python, HTML, vega-lite, Altair]
-image: assets/pngs/cars.png
+image: assets/pngs/lineplot.png
 description: More Altair examples
 custom_js:
   - vega.min
